@@ -24,7 +24,9 @@ def finder(contact): #найти контакт
                     if data[values] == phone_finder:
                         print(data[values])
 
-def delete_cont(contact):
+def changer(contact_change): #изменить данные
+    return None
+def delete_cont(contact): #удалить контакт
     return None
 
 # if __name__ == "__main__":
