@@ -26,8 +26,14 @@ def finder(contact): #найти контакт
 
 def changer(contact_change): #изменить данные
     return None
-def delete_cont(contact): #удалить контакт
-    return None
+def delete_contact(name): # удаление данных
+    
+    contact = input()
+    with open("data.txt", "w", encoding="utf8" ) as file:
+        for contact in contact:
+            if name != contact:
+                file.write(contact)
+                print()
 
 # if __name__ == "__main__":
 #     storage()
